@@ -124,7 +124,7 @@ const LoginPage = () => {
               fullWidth 
             />
 
-            <StyledSubmitButton fullWidth onClick={}>
+            <StyledSubmitButton fullWidth>
               Sign In
             </StyledSubmitButton>
 
