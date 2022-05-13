@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { styled } from '@mui/system';
 import { Button, Grid, TextField, Checkbox, FormControlLabel } from '@mui/material';
 import LogoSvg from '../assets/LogoSvg'
-
+import history from '../utils/history.js'
 
 const BackgroundImageWrapper = styled('div')({
   backgroundSize: 'cover',
@@ -194,7 +194,7 @@ export const LoginPage = () => {
               fullWidth 
             />
 
-            <StyledSubmitButton fullWidth>
+            <StyledSubmitButton fullWidth onClick={() => history.push('/dashboard')}>
               Sign In
             </StyledSubmitButton>
 
