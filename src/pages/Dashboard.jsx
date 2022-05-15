@@ -64,21 +64,53 @@ const MovieControlButtons = styled('div')({
 })
 
 const StyledModal = styled(Modal)({
+  display: 'flex',
+  alignItems: 'flex-start',
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  right: 0,
+  bottom: 0,
+  zIndex: 1300,
+  padding: '2rem',
+  overflowY: 'auto',
   '& .MuiBox-root': {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
+    maxWidth: 800,
+    position: 'relative',
+    // backgroundClip: 'padding-box',
+    margin: '0 auto',
+    outline: 'none',
+    background: '#fff',
+    zIndex: 1301,
     backgroundColor: 'white',
     padding: 40,
   }
 })
 
-const Details = styled(Box)({
-  // color: '#aaa',
-  color: '#000',
-  fontSize: 14
+const Details = styled('div')({
+  maxWidth: 800,
+  position: 'relative',
+  // backgroundClip: 'padding-box',
+  margin: '0 auto',
+  outline: 'none',
+  background: '#fff',
+  zIndex: 1301,
+  backgroundColor: 'black',
+  color: '#fff',
+  fontSize: 14,
+  "& img": {
+    width: "100%",
+    opacity: .8,
+  }
+})
+
+const DetailImage = styled('div')({
+  background: "-webkit-gradient(linear,left bottom,left top,from(#181818),color-stop(50%,transparent))",
+  width: "100%",
+})
+
+const Content = styled('div')({
+  padding: 20,
 })
 
 const StyledForm = styled(Box)({
@@ -419,23 +451,29 @@ export const Dashboard = () => {
                 >
                   <Fade in={showDetail !== null}>
                     <Details>
-                      <Typography variant='h5'>{movie.name}</Typography>
-                      <img src={movie.img} alt="" />
-                      <Typography>{movie.description}</Typography>
-                      <br/>
-                      <Typography>
-                        <strong>Casts:<br/></strong>
-                        {movie.cast}
-                      </Typography>
-                      <Typography>
-                        <strong>Release year: </strong>{movie.date}
-                      </Typography>
-                      <Typography>
-                        <strong>Rating: </strong>
-                        {`${movie.rating}/5`}
-                      </Typography>
-                      <br/>
-                      <Typography>{movie.duration}</Typography>
+                      <DetailImage>
+                        <img src={movie.img} alt="" />
+                        <Typography variant='h5'>{movie.name}</Typography>
+                      </DetailImage>
+                      <Content>
+                        
+                        <Typography>{movie.description}</Typography>
+                        <br />
+                        <Typography>
+                          <strong>Casts:<br /></strong>
+                          {movie.cast}
+                        </Typography>
+                        <Typography>
+                          <strong>Release year: </strong>{movie.date}
+                        </Typography>
+                        <Typography>
+                          <strong>Rating: </strong>
+                          {`${movie.rating}/5`}
+                        </Typography>
+                        <br />
+                        <Typography>{movie.duration}</Typography>
+                      </Content>
+                      
                     </Details>
                   </Fade>
                 </StyledModal>
