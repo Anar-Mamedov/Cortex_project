@@ -1,3 +1,8 @@
+Siteye Altdakı linkten erişe bilirsiniz. Bu site Netflix tasarımı baz alınarak React.js ile yapıldı
+
+http://netflixreact.anarmamedov.com/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
