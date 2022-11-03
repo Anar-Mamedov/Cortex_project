@@ -1,6 +1,6 @@
 Siteye Altdakı linkten erişe bilirsiniz. Bu site Netflix tasarımı baz alınarak React.js ile yapıldı
 
-http://netflixreact.anarmamedov.com/
+https://projectwithreact.anarmamedov.com/
 
 
 # Getting Started with Create React App
