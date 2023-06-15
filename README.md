@@ -2,9 +2,9 @@ Siteye Altdakı linkten erişe bilirsiniz. Bu site Netflix tasarımı baz alına
 
 https://projectwithreact.anarmamedov.com/
 
-![Alt text](https://github.com/Anar-Mamedov/Cortex_project/blob/master/1.png)
-![Alt text](https://github.com/Anar-Mamedov/Cortex_project/blob/master/2.png)
-![Alt text](https://github.com/Anar-Mamedov/Cortex_project/blob/master/3.png)
+![Alt text](https://github.com/Anar-Mamedov/Cortex_project/blob/main/1.png)
+![Alt text](https://github.com/Anar-Mamedov/Cortex_project/blob/main/2.png)
+![Alt text](https://github.com/Anar-Mamedov/Cortex_project/blob/main/3.png)
 
 # Getting Started with Create React App
 
